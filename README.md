@@ -1,0 +1,1 @@
+This app is running in https://angularappto2020.herokuapp.com/jokes
