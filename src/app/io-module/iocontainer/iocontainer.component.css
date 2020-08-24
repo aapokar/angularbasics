@@ -1,0 +1,14 @@
+.iocontainer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.io-section {
+        width: auto;
+        border: cadetblue solid 1px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #ebebeb;
+        margin: 10px;    
+}

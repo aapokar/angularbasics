@@ -1,0 +1,30 @@
+<nav class="toolbar">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+    true}" class="toolbar-button">
+    Home
+  </a>
+  <ng-container *ngIf="loggedIn">
+    <a routerLink="/jokes" routerLinkActive="active" class="toolbar-button">
+      Jokes
+    </a>
+    <a routerLink="/directive-example" routerLinkActive="active" class="toolbar-button">
+      Directive
+    </a>
+    <a routerLink="/io" routerLinkActive="active" class="toolbar-button">
+      IO
+    </a>
+  </ng-container>
+  <a routerLink="/about" routerLinkActive="active" class="toolbar-button">
+    About
+  </a>
+
+  <span class="toolbar-title">
+    {{title}}
+  </span>
+  <ng-container *ngIf="loggedIn">
+    <p>Logged in as <i>{{user}}</i></p>
+    <button type="button" class="logout-button" (click)="logOut()">
+      logout
+    </button>
+  </ng-container>
+</nav>

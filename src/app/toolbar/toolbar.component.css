@@ -1,0 +1,37 @@
+.toolbar-title {
+    margin: auto;
+    color: white;
+}
+.toolbar-button {
+    font-weight: bold;
+    color: white;
+    background-color: #132323;
+}
+.logout-button {
+    font-weight: bold;
+    color: #ebceb1;
+    background-color: #132323;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #dd6699;
+    color: #1976d2;
+}
+
+.toolbar-button:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+
+.toolbar {
+    background-color: #1976d2;
+    display: flex;
+    flex-direction: row;
+}
+
+.active {
+    color: black;
+    background-color: #ebebeb;
+}

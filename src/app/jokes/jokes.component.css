@@ -1,0 +1,19 @@
+.jokes-container {
+    width: 100%;
+    height: 100%;
+}
+
+.static-joke {
+    width: auto;
+    border: cadetblue solid 1px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    margin: 10px;
+}
+
+.joke-button {
+    background-color: #1976d2;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,20 @@
+<div class="login-container">
+  <div *ngIf="loggedIn; else elseBlock">
+    <h1>You are already logged in</h1>
+  </div>
+  <ng-template #elseBlock>
+    <h1>Please log in using this reactive form</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label>
+        Name: <br>
+        <input type="text" formControlName="name">
+      </label>
+      <button type="submit" class="login-form-button">
+        Submit
+      </button>
+    </form>
+    <button (click)="updateName()" class="login-form-button">
+      Show example
+    </button>
+  </ng-template>
+</div>

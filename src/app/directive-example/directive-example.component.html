@@ -1,0 +1,9 @@
+<div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan
+  </div>
+
+<div [appHighlight]="color">
+    <p>directive-example works!</p>
+</div>
