@@ -1,4 +1,27 @@
 .about-container {
     display: flex;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px;
+}
+
+.about-container ol {
+    width: 500px;
+}
+.about-container ol li{
+    margin: 2px;
+    padding: 2px;
+    background-color: #8af;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.about-container ol li:hover{
+    padding: 4px;
+}
+
+.code-area {
+    padding: 5px;
+    text-align: start;
+    background-color: #121212;
 }

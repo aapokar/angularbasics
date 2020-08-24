@@ -3,19 +3,39 @@
     About
   </h1>
   <p>
-      This project is a sample of basic Angular functions.
-      Source code will be added soon!
+    This project is a sample of basic Angular functions.
+    <a href="https://github.com/aapokar/angularbasics">Source code
+    <img [src]="imgSrc" height="64px" width="64px"/></a>
   </p>
 
   <h2>Steps to deploying to Heroku</h2>
   <h3>with automatically deploying from pushing to github</h3>
   <ol>
     <li>Create new github-repo</li>
-    <li>Push content to github</li>
     <li>Connect from Heroku to gitHub</li>
     <li>Enable automatic deployment</li>
-    <li>npm install @angular/cli@latest @angular/compiler-cli --save</li>
+    <li>npm install express --save</li>
+    <li>Create server.js in root and conf it to <br />
+      <div class="code-area">
+      <code>const express = require('express')</code><br />
+      <code> const app = express()</code><br />
+      <br />
+      <code>app.use(express.static('./dist/'));</code><br />
+      <br />
+      <code>app.get('/*', function (req, res) {{ '{' }}</code><br />
+      <code>res.sendFile('index.html', {{ '{' }}</code><br />
+      <code>root: 'dist/'</code><br />
+      <code>});</code><br />
+      <code>});</code><br />
+      <br />
+      <code>app.listen(process.env.PORT || 8080);</code><br />
+    </div>
 
+    </li>
+    <li>build</li>
+    <li>Push content to github</li>
   </ol>
-  <p>Source <i>https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147</i></p>
+  <p>
+    <a href="https://medium.com/better-programming/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d">
+      Source</a></p>
 </div>

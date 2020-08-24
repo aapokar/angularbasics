@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 })
 
 export class LoginFormComponent implements OnInit {
+
   loginForm = new FormGroup({
     name: new FormControl(''),
   });

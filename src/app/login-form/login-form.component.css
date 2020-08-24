@@ -5,7 +5,7 @@
 }
 
 .login-form-button {
-    margin: 10px;
+    margin: 10px 0;
     min-width: 100px;
     width: fit-content;
     transition: 0.3s;
@@ -13,4 +13,12 @@
 .login-form-button:hover {
     background-color: #3e8e41;
     color: white;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: #d5dbeb;
+    border-radius: 10px;
 }
