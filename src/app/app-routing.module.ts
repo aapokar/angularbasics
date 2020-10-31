@@ -6,6 +6,7 @@ import { JokesComponent } from './jokes/jokes.component';
 import { DirectiveExampleComponent } from './directive-example/directive-example.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { AuthGuardService as AuthGuard } from './services/auth-guard.service';
+import { QrComponent } from './qr/qr.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,8 @@ const routes: Routes = [
   {path: 'jokes', component: JokesComponent,
   canActivate: [AuthGuard]},
   {path: 'directive-example', component: DirectiveExampleComponent,
+  canActivate: [AuthGuard]},
+  {path: 'qr', component: QrComponent,
   canActivate: [AuthGuard]},
 ];
 

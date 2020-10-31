@@ -1,0 +1,6 @@
+<div class="qr-page">
+<p>Hello, software testing and maintenance</p>
+<input type="text" [(ngModel)]="userInput">
+<qrcode [colorDark] [qrdata]="userInput" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+<p>{{userInput}}</p>
+</div>
